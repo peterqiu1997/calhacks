@@ -1,5 +1,9 @@
 import React from "react";
 import io from "socket.io-client";
+import Display from "./Display.js";
+import Footer from "./Footer.js"
+
+require("../styles/index.scss");
 
 export default class App extends React.Component { 
 
@@ -20,7 +24,13 @@ export default class App extends React.Component {
     render() {
     	return (
     		<div class="App">
-    			<h1> me </h1>
+    			<h1> BLAHBLAHLAH </h1>
+                <Display>
+                    
+                </Display>
+                <Footer> 
+
+                </Footer>
     		</div>
     	)
     }
