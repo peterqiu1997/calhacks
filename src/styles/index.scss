@@ -1,3 +1,47 @@
-.display {
-	color: green;
+@import "colors";
+
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content {
+  .display {
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    text-align: justify;
+
+    .display__divide {
+      position: absolute;
+      left: 50%;
+      height: 85vh;
+      width: 2px;
+      opacity: 0.98;
+      display: inline-block;
+      background-color: $c__grey--light;
+    }
+
+    .display__pane {
+      width: 45%;
+      height: 100%;
+      overflow-y: scroll;
+      display: inline-block;
+
+      .display__pane--content {
+        padding: 15px;
+      }
+    }
+    
+
+    .display__pane--pro {
+      float: left;
+    }
+
+    .display__pane--con {
+      float: right;
+    }
+  }
 }
