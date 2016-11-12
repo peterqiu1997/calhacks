@@ -12,6 +12,7 @@
     width: 85vw;
     height: 85vh;
     margin: 0 auto;
+    overflow-y: hidden;
     text-align: justify;
 
     .display__divide {
@@ -27,7 +28,7 @@
     .display__pane {
       width: 45%;
       height: 100%;
-      overflow-y: scroll;
+      overflow-y: auto;
       display: inline-block;
 
       .display__pane--content {
@@ -35,7 +36,6 @@
       }
     }
     
-
     .display__pane--pro {
       float: left;
     }
@@ -43,5 +43,9 @@
     .display__pane--con {
       float: right;
     }
+  }
+
+  .footer {
+
   }
 }

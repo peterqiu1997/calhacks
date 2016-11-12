@@ -1,6 +1,7 @@
 import React from "react";
 //import io from "socket.io-client";
 import Display from "./Display.js";
+import Footer from "./Footer.js"
 
 require("../styles/index.scss");
 
