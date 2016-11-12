@@ -1,16 +1,27 @@
-import React from 'react'
-import Footer from './Footer'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import React from "react";
+import io from "socket.io-client";
 
-const App = () => (
-  <div>
-  	<h1>CalHacks</h1><div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
-  </div>
-)
+export default class App extends React.Component { 
 
-export default App
+    constructor(props) {
+        super(props);
+        // "Single source of truth": All data is kept here. Functions to manipulate it are passed down as props.
+        this.socket = io();
+
+        this.state = {
+
+        } 
+    }
+
+    componentWillMount() { 
+        const socket = this.socket;
+    }
+
+    render() {
+    	return (
+    		<div class="App">
+    			<h1> me </h1>
+    		</div>
+    	)
+    }
+}
